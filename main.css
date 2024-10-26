@@ -3,17 +3,22 @@
   gap: 100px;
   list-style: none;
   margin-left: 700px;
+  text-decoration: none;
 }
 .menu .h1-ul-menu {
   margin-top: 37px;
+  color: black;
+  text-decoration: none;
 }
 .menu .h1-ul-menu:hover {
-  color: rgba(110, 125, 142, 0.4588235294);
+  color: #1b4f72;
   transition: color 0.2s ease;
 }
 .menu .menu a {
   text-decoration: none;
-  color: #f5b041;
+}
+.menu a {
+  text-decoration: none;
 }
 
 .h1-main {
