@@ -1,0 +1,20 @@
+.menu {
+    display: flex;
+    gap: 100px;
+    list-style: none;
+    margin-left: 700px;
+    .h1-ul-menu {
+      margin-top: 37px;
+    }
+    
+    .h1-ul-menu:hover{
+      color: #6e7d8e75;
+      transition: color 0.2s ease;
+    }
+    .menu a {
+      text-decoration: none;
+      color: #f5b041;
+    }
+  }
+
+  
