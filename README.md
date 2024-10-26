@@ -1,5 +1,7 @@
 # LinuxAppStore = The store for real Linux Users
-The Linux App Store website provides a curated list of popular applications for Linux users, including tools for productivity, media, and gaming. It features well-known apps like GIMP, VLC, LibreOffice, Firefox, and Steam, among others. The site aims to simplify the process of finding and installing Linux-compatible software by showcasing a range of both essential and niche applications across various categories.
+The Remastered version is in early stage. Please know where are you clicking and what you are clicking. The Website has a lot of bugs and unfinished work. The Website will be finished in future. The Website will be availble on tablet telephones and PC. But now is only PC. 
 
-## You can see our animations through the website!
-## And download apps from our store ( available on some of the apps )!
+### Thank you for understanding!
+
+# The AppStore Group
+
