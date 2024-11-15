@@ -152,7 +152,8 @@ body {
 }
 
 .li-top:hover {
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin: 10px;
+  transition: background-color 0.3s ease, margin cubic-bezier(0.075, 0.82, 0.165, 1) 1s, transform 0.3s ease;
   transform: scale(1.2);
 }
 
@@ -210,6 +211,13 @@ body {
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
   background-color: rgba(110, 125, 142, 0.3882352941);
+}
+
+.li-link {
+  transition: margin cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+.li-link:hover {
+  margin: 10px;
 }
 
 .menu-main {
