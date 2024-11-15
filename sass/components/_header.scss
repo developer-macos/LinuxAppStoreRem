@@ -1,26 +1,34 @@
 .menu {
-    display: flex;
-    gap: 100px;
-    list-style: none;
-    margin-left: 700px;
-    text-decoration: none;
-    .h1-ul-menu {
-      margin-top: 37px;
-      color: black;
-      text-decoration: none;
-    }
-    
-    .h1-ul-menu:hover{
-      color: #1b4f72;
-      transition: color 0.2s ease;
-    }
-    .menu a {
-      text-decoration: none;
-        }
+  display: flex;
+  gap: 100px;
+  list-style: none;
+  margin-left: 700px;
+  text-decoration: none;
 
-        a {
-          text-decoration: none;
-        }
+  .h1-ul-menu {
+    margin-top: 37px;
+    color: black;
+    text-decoration: none;
   }
 
-  
+  .h1-ul-menu:hover {
+    color: #1b4f72;
+    transition: color 0.2s ease;
+  }
+
+  .menu a {
+    text-decoration: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.logo{
+  transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+
+  &:hover{
+    transform: scale(1.1);
+  }
+}
