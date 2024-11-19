@@ -14,7 +14,7 @@
         <ul class="menu">
             <li>
                 <a href="">
-                    <img src="./img/logo.svg" alt="" width="120" height="120" class="logo"/>
+                    <img src="./img/logo.svg" alt="" width="120" height="120" class="logo" />
                 </a>
             </li>
             <li>
@@ -32,34 +32,33 @@
                     <h1 class="h1-ul-menu">Gaming</h1>
                 </a>
             </li>
+            <li>
+                <a class="h1-ul-menu" href="https://kirillkapteily.github.io/winex-app-store-rem/">
+                    <h1 class="h1-ul-menu">Change to Windows</h1>
+                </a>
+            </li>
         </ul>
     </header>
     <hr width="1900px" />
     <main>
-        <h1 class="h1-main">ABOUT US</h1>
-        <ul class="menu-main" id="aboutus">
-            <li class="li-main">
-                <img src="./img/2024-08-11 19.12.44.jpg" width="250" height="250" alt="" />
-                <p class="p-main">Volodymyr Iarovyi (Owner of the website)</p>
-            </li>
-            <li class="li-main">
-                <img src="./img/kirillava.jpeg" width="250" height="250" alt="" />
-                <p class="p-main">
-                    Kiril Kaptely (Developer of WinExAppStore and owner of the Appstore
-                    series)
-                </p>
-            </li>
-        </ul>
-        <hr width="1900" />
+        <div class="carousel">
+            <div class="carousel-inner" id="carouselInner">
+                <div class="carousel-item"><img src="/img/image-slider-1.png" alt="Slide 1"></div>
+                <div class="carousel-item"><img src="https://via.placeholder.com/600x300?text=Slide+2" alt="Slide 2"></div>
+                <div class="carousel-item"><img src="https://via.placeholder.com/600x300?text=Slide+3" alt="Slide 3"></div>
+            </div>
+            <button class="carousel-button prev" onclick="moveSlide(-1)">❮</button>
+            <button class="carousel-button next" onclick="moveSlide(1)">❯</button>
+        </div>
         <h1 class="h1-others" id="other">Apps which are useful for education</h1>
         <ul class="ul-top-others container">
             <li class="li-top brave">
                 <a href="#">
-<p class="number"></p>
-                <img src="./img/brave.webp" alt="steam" class="li-img" />
-                <p class="program-name">Brave</p>
+                    <p class="number"></p>
+                    <img src="./img/brave.webp" alt="steam" class="li-img" />
+                    <p class="program-name">Brave</p>
                 </a>
-                
+
             </li>
             <li class="li-top">
                 <p class="number"></p>
@@ -110,17 +109,19 @@
                 <p class="program-name">Microsoft Edge</p>
             </li>
             <li class="li-top">
-                <a href="./download/librewolf-download.html">  <p class="number"></p>
+                <a href="./download/librewolf-download.html">
+                    <p class="number"></p>
                     <img src="https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Fio%2Fgitlab%2Flibrewolf-community%2F394624435bd0aeda09306f72c25aa2e4%2Ficons%2F128x128%2Fio.gitlab.librewolf-community.png&w=128&q=100"
                         alt="steam" class="li-img" />
-                    <p class="program-name">LibreWolf</p></a>
+                    <p class="program-name">LibreWolf</p>
+                </a>
             </li>
             <a href="./download/onlyoffice.html">
-            <li class="li-top">
-                <p class="number"></p>
-                <img src="https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Forg%2Fonlyoffice%2Fdesktopeditors%2F3de73fedbd02c80328c12c9573e3d4c9%2Ficons%2F128x128%2Forg.onlyoffice.desktopeditors.png&w=128&q=100 "
-                alt="steam" class="li-img" />
-                <p class="program-name">ONLYOFFICE <br> Desktop Editors</p>
+                <li class="li-top">
+                    <p class="number"></p>
+                    <img src="https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Forg%2Fonlyoffice%2Fdesktopeditors%2F3de73fedbd02c80328c12c9573e3d4c9%2Ficons%2F128x128%2Forg.onlyoffice.desktopeditors.png&w=128&q=100 "
+                        alt="steam" class="li-img" />
+                    <p class="program-name">ONLYOFFICE <br> Desktop Editors</p>
             </a>
             </li>
             <li class="li-top">
@@ -209,4 +210,5 @@
     </main>
 </body>
 <script src="js.js"></script>
+
 </html>
