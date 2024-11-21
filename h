@@ -1,0 +1,1 @@
+https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Fcom%2Fdiscordapp%2FDiscord.desktop%2Fa989f6ae24ec9f6b6be1714ddbf94c94%2Ficons%2F128x128%2Fcom.discordapp.Discord.desktop.png&w=128&q=100
