@@ -2,173 +2,132 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./img/logo.png" />
-    <link rel="stylesheet" href="main.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <title class="title">Linux App Store Remastered</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux App Store Remastered V1</title>
+    <link rel="stylesheet" href="./css-v1/styles-v1.css">
+    <style>
+
+    </style>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">LinuxAppStore Remastered Version</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#games">Games</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">AI</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
-            </div>
+    <header class="main-header">
+        <div class="logo">MyLogo</div>
+        <nav class="navbar">
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
-    <hr width="2500px" />
-    <main>
-        <div class="carousel">
-            <div class="carousel-inner" id="carouselInner">
-                <div class="carousel-item"><img src="/img/slider-images/Group 18.png" alt="Slide 1"></div>
-                <div class="carousel-item"><img src="/img/slider-images/Group 19.png" alt="Slide 2"></div>
-                <div class="carousel-item"><img src="/img/slider-images/Group 20.png" alt="Slide 3"></div>
-            </div>
-            <button class="carousel-button prev" onclick="moveSlide(-1)">❮</button>
-            <button class="carousel-button next" onclick="moveSlide(1)">❯</button>
-        </div>
-        <h1 class="h1-others" id="other">Apps which are useful for education</h1>
-        <ul class="ul-top-others container">
-            <div class="card" style="width: 250px;">
-                <img src="https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Fcom%2Fdiscordapp%2FDiscord.desktop%2Fa989f6ae24ec9f6b6be1714ddbf94c94%2Ficons%2F128x128%2Fcom.discordapp.Discord.desktop.png&w=128&q=100"
-                    class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Notes</h5>
-                    <p class="card-text">Take some quick notes in the Notes App!</p>
-                    <a href="#" class="btn btn-primary">Install</a>
-                </div>
-            </div>
-            <div class="card" style="width: 250px;">
+
+    <div class="content">
+        <div class="app-list">
+            <div class="app-card">
+                <br><br><br>
                 <img src="https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Forg%2Flibreoffice%2FLibreOffice.desktop%2F1c31cd89df6d1f574bbf810a618e0d87%2Ficons%2F128x128%2Forg.libreoffice.LibreOffice.desktop.png&w=128&q=100"
-                    class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">LibreOffice</h5>
-                    <p class="card-text">LibreOffice is a powerful office suite. Its clean interface and feature-rich
-                        tools help you unleash your creativity and
-                        enhance your productivity.</p>
-                    <a href="#" class="btn btn-primary">Install</a>
+                    alt="App One Image">
+                <br><br>
+                <h3>LibreOffice</h3>
+                <p>A brief description of App One. Ideal for productivity enthusiasts.</p>
+                <ul>
+                    <li>Feature 1: Lightweight</li>
+                    <li>Feature 2: Cross-platform</li>
+                    <li>Feature 3: Open Source</li>
+                </ul>
+            </div>
+            <div class="app-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROwsCgR2Vz1Voa8cPq4SQmYiTG9rpVudFGEw&s"
+                    alt="App Two Image">
+                <h3>Google Chrome</h3>
+                <p>Perfect for watching some Youtube when you have some free time</p>
+                <ul>
+                    <li>Feature 1: API support</li>
+                    <li>Feature 2: Customizable UI</li>
+                    <li>Feature 3: Free to use</li>
+                </ul>
+            </div>
+            <div class="app-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png"
+                    alt="App Three Image">
+                <h3>Visual Studio Code</h3>
+                <p>Perfect for developers!</p>
+                <ul>
+                    <li>Feature 1: High-quality developing</li>
+                    <li>Feature 2: A lot of Commands</li>
+                    <li>Feature 3: Offline mode</li>
+                </ul>
+            </div>
+            <div class="app-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Github-desktop-logo-symbol.svg/2048px-Github-desktop-logo-symbol.svg.png"
+                    alt="App Four Image">
+                <h3>App Four</h3>
+                <p>Enhance your gaming experience with this tool.</p>
+                <ul>
+                    <li>Feature 1: API support</li>
+                    <li>Feature 2: Customizable UI</li>
+                    <li>Feature 3: Free to use</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="app-list">
+                <div class="app-card">
+                    <br><br><br>
+                    <img src="https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Forg%2Flibreoffice%2FLibreOffice.desktop%2F1c31cd89df6d1f574bbf810a618e0d87%2Ficons%2F128x128%2Forg.libreoffice.LibreOffice.desktop.png&w=128&q=100"
+                        alt="App One Image">
+                    <br><br>
+                    <h3>LibreOffice</h3>
+                    <p>A brief description of App One. Ideal for productivity enthusiasts.</p>
+                    <ul>
+                        <li>Feature 1: Lightweight</li>
+                        <li>Feature 2: Cross-platform</li>
+                        <li>Feature 3: Open Source</li>
+                    </ul>
+                </div>
+                <div class="app-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROwsCgR2Vz1Voa8cPq4SQmYiTG9rpVudFGEw&s"
+                        alt="App Two Image">
+                    <h3>Google Chrome</h3>
+                    <p>Perfect for watching some Youtube when you have some free time</p>
+                    <ul>
+                        <li>Feature 1: API support</li>
+                        <li>Feature 2: Customizable UI</li>
+                        <li>Feature 3: Free to use</li>
+                    </ul>
+                </div>
+                <div class="app-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png"
+                        alt="App Three Image">
+                    <h3>Visual Studio Code</h3>
+                    <p>Perfect for developers!</p>
+                    <ul>
+                        <li>Feature 1: High-quality developing</li>
+                        <li>Feature 2: A lot of Commands</li>
+                        <li>Feature 3: Offline mode</li>
+                    </ul>
+                </div>
+                <div class="app-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Github-desktop-logo-symbol.svg/2048px-Github-desktop-logo-symbol.svg.png"
+                        alt="App Four Image">
+                    <h3>App Four</h3>
+                    <p>Enhance your gaming experience with this tool.</p>
+                    <ul>
+                        <li>Feature 1: API support</li>
+                        <li>Feature 2: Customizable UI</li>
+                        <li>Feature 3: Free to use</li>
+                    </ul>
                 </div>
             </div>
-            <div class="card" style="width: 250px;">
-                <img src="https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Fcom%2Fdiscordapp%2FDiscord.desktop%2Fa989f6ae24ec9f6b6be1714ddbf94c94%2Ficons%2F128x128%2Fcom.discordapp.Discord.desktop.png&w=128&q=100"
-                    class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Discord</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's
-                        content.</p>
-                    <a href="#" class="btn btn-primary">Install</a>
-                </div>
-            </div>
-            <div class="card" style="width: 250px;">
-                <img src="https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Fcom%2Fdiscordapp%2FDiscord.desktop%2Fa989f6ae24ec9f6b6be1714ddbf94c94%2Ficons%2F128x128%2Fcom.discordapp.Discord.desktop.png&w=128&q=100"
-                    class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Discord</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's
-                        content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card" style="width: 250px;">
-                <img src="https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Fcom%2Fdiscordapp%2FDiscord.desktop%2Fa989f6ae24ec9f6b6be1714ddbf94c94%2Ficons%2F128x128%2Fcom.discordapp.Discord.desktop.png&w=128&q=100"
-                    class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Discord</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's
-                        content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card" style="width: 250px;">
-                <img src="https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Fcom%2Fdiscordapp%2FDiscord.desktop%2Fa989f6ae24ec9f6b6be1714ddbf94c94%2Ficons%2F128x128%2Fcom.discordapp.Discord.desktop.png&w=128&q=100"
-                    class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Discord</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's
-                        content.</p>
-                    <a href="#" class="btn btn-primary">Install</a>
-                </div>
-            </div>
-        </ul>
-        <h1 id="games">Gaming</h1>
-        <ul class="ul-top">
-            <li class="li-top">
-                <p class="number"></p>
-                <img src="https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Fcom%2Fvalvesoftware%2FSteam%2Ff4d049e9c760abb6e8ba92854d6d68a5%2Ficons%2F128x128%2Fcom.valvesoftware.Steam.png&w=128&q=100"
-                    alt="steam" class="li-img" />
-                <p class="program-name">Steam</p>
-            </li>
-            <li class="li-top">
-                <p class="number"></p>
-                <img src="https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Frepo%2Fappstream%2Fx86_64%2Ficons%2F128x128%2Fio.gdevs.GDLauncher.png&w=128&q=100"
-                    alt="steam" class="li-img" />
-                <p class="program-name">GDLauncher</p>
-            </li>
-            <li class="li-top">
-                <p class="number"></p>
-                <img src="https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Fnet%2Flutris%2FLutris%2F0179e0908ed754d744f33dc13e5dd6b3%2Ficons%2F128x128%2Fnet.lutris.Lutris.png&w=128&q=100"
-                    alt="steam" class="li-img" />
-                <p class="program-name">Lutris</p>
-            </li>
-            <li class="li-top">
-                <p class="number"></p>
-                <img src="https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Fcom%2Fheroicgameslauncher%2Fhgl%2F9b8fe46577f483443267d1e756ae57ae%2Ficons%2F128x128%2Fcom.heroicgameslauncher.hgl.png&w=128&q=100"
-                    alt="steam" class="li-img" />
-                <p class="program-name">Heroic <br> Games Launcher</p>
-            </li>
-            <li class="li-top">
-                <p class="number"></p>
-                <img src="https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Fcom%2Fusebottles%2Fbottles%2F45a947fa3d346665b6aa7077afe1d205%2Ficons%2F128x128%2Fcom.usebottles.bottles.png&w=128&q=100"
-                    alt="steam" class="li-img" />
-                <p class="program-name">Bottles</p>
-            </li>
-            <li class="li-top">
-                <p class="number"></p>
-                <img src="https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Forg%2Fvinegarhq%2FVinegar%2F94cccd61a38e9b93bcc7071c3b8a3a15%2Ficons%2F128x128%2Forg.vinegarhq.Vinegar.png&w=128&q=100"
-                    alt="steam" class="li-img" />
-                <p class="program-name">Vinegar</p>
-            </li>
-        </ul>
-    </main>
 </body>
-<script src="js.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-    crossorigin="anonymous"></script>
 
 </html>
