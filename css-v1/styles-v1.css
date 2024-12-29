@@ -47,9 +47,8 @@
  .app-card:hover {
      transform: translateY(-5px);
      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-     background-color: #ff512f;
-     color: white;
      transition: 0.25s ease-in-out;
+     background-color: #FFCC33;
  }
 
  .app-card h3 {
@@ -71,17 +70,12 @@
 
  .app-card a {
      text-decoration: none;
-     background: #0078d7;
+
      color: #fff;
      padding: 10px 15px;
      border-radius: 5px;
      transition: background 0.3s ease;
  }
-
- .app-card a:hover {
-     background: #005bb5;
- }
-
  .fill-up-section {
      background: #fff;
      padding: 40px 20px;
