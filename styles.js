@@ -31,3 +31,12 @@ document.head.appendChild(style);
 function buttonClicked() {
     alert('The gods have blessed you!');
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+    });
+});
