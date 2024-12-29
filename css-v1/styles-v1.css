@@ -1,0 +1,316 @@
+ body {
+     margin: 0;
+     font-family: 'Arial', sans-serif;
+     background: linear-gradient(to bottom right, #ff7e5f, #feb47b);
+     color: #333;
+ }
+
+ header {
+     background: #0078d7;
+     color: #fff;
+     padding: 20px;
+     text-align: center;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+ }
+
+ header h1 {
+     margin: 0;
+     font-size: 2.5em;
+ }
+
+ header p {
+     font-size: 1.2em;
+     margin: 5px 0 0;
+ }
+
+ .content {
+     padding: 20px;
+     max-width: 1200px;
+     margin: 0 auto;
+ }
+
+ .app-list {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+     gap: 20px;
+ }
+
+ .app-card {
+     background: #fff;
+     border-radius: 10px;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     padding: 20px;
+     text-align: center;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+
+ .app-card:hover {
+     transform: translateY(-5px);
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+     background-color: #ff512f;
+     color: white;
+     transition: 0.25s ease-in;
+ }
+
+ .app-card h3 {
+     margin: 0 0 10px;
+     font-size: 1.5em;
+ }
+
+ .app-card p {
+     margin: 0 0 15px;
+     font-size: 1em;
+     color: #555;
+ }
+
+ .app-card img {
+     max-width: 100%;
+     border-radius: 10px;
+     margin-bottom: 15px;
+ }
+
+ .app-card a {
+     text-decoration: none;
+     background: #0078d7;
+     color: #fff;
+     padding: 10px 15px;
+     border-radius: 5px;
+     transition: background 0.3s ease;
+ }
+
+ .app-card a:hover {
+     background: #005bb5;
+ }
+
+ .fill-up-section {
+     background: #fff;
+     padding: 40px 20px;
+     text-align: center;
+     margin-top: 40px;
+     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+ }
+
+ .fill-up-section h2 {
+     font-size: 2em;
+     margin-bottom: 20px;
+ }
+
+ .fill-up-section p {
+     font-size: 1.1em;
+     margin-bottom: 20px;
+ }
+
+ .fill-up-section input,
+ .fill-up-section button {
+     padding: 10px;
+     margin: 5px;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+     font-size: 1em;
+ }
+
+ .fill-up-section button {
+     background: #0078d7;
+     color: #fff;
+     border: none;
+     cursor: pointer;
+     transition: background 0.3s ease;
+ }
+
+ .fill-up-section button:hover {
+     background: #005bb5;
+ }
+
+ .team-section {
+     background: #f4f4f4;
+     padding: 40px 20px;
+     text-align: center;
+     margin-top: 40px;
+ }
+
+ .team-section h2 {
+     font-size: 2em;
+     margin-bottom: 20px;
+ }
+
+ .team-list {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     gap: 20px;
+ }
+
+ .team-member {
+     background: #fff;
+     border-radius: 10px;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     padding: 20px;
+     max-width: 250px;
+     text-align: center;
+ }
+
+ .team-member img {
+     width: 100px;
+     height: 100px;
+     border-radius: 50%;
+     margin-bottom: 15px;
+ }
+
+ .team-member h3 {
+     margin: 0;
+     font-size: 1.3em;
+ }
+
+ .team-member p {
+     font-size: 1em;
+     color: #555;
+ }
+
+ footer {
+     background: #333;
+     color: #fff;
+     text-align: center;
+     padding: 15px;
+     margin-top: 40px;
+ }
+
+ footer p {
+     margin: 0;
+ }
+
+ footer a {
+     color: #4ca1af;
+     text-decoration: none;
+ }
+
+ footer a:hover {
+     text-decoration: underline;
+ }
+
+ @media (max-width: 768px) {
+     header h1 {
+         font-size: 2em;
+     }
+
+     header p {
+         font-size: 1em;
+     }
+
+     .app-card h3 {
+         font-size: 1.3em;
+     }
+
+     .app-card p {
+         font-size: 0.9em;
+     }
+ }
+
+ @media (max-width: 480px) {
+     header h1 {
+         font-size: 1.8em;
+     }
+
+     header p {
+         font-size: 0.9em;
+     }
+ }
+
+ /* General body styling */
+ body {
+     height: 100vh;
+     background-color: #1e1e1e;
+     margin: 0;
+     font-family: 'Arial', sans-serif;
+ }
+
+ /* The God-like button */
+ .god-button {
+     padding: 15px 30px;
+     font-size: 22px;
+     font-weight: bold;
+     text-transform: uppercase;
+     color: white;
+     background: linear-gradient(45deg, #ff512f, #dd2476);
+     border: 2px solid #ff512f;
+     border-radius: 50px;
+     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5), 0 0 15px rgba(255, 81, 47, 0.8);
+     cursor: pointer;
+     outline: none;
+     transition: all 0.4s ease-in-out;
+     position: relative;
+ }
+
+ /* Glowing effect on hover */
+ .god-button:hover {
+     background: linear-gradient(45deg, #ff512f, #ff7676);
+     box-shadow: 0 0 20px 5px rgba(255, 81, 47, 0.9), 0 0 30px rgba(221, 36, 118, 0.8);
+     transform: translateY(-5px);
+ }
+
+ /* Pulsing effect when the button is clicked */
+ .god-button:active {
+     background: linear-gradient(45deg, #dd2476, #ff512f);
+     box-shadow: 0 0 30px 10px rgba(255, 81, 47, 0.9), 0 0 50px rgba(221, 36, 118, 0.9);
+     transform: translateY(2px);
+ }
+
+ /* Adding a subtle aura glow */
+ .god-button:focus {
+     outline: none;
+     box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5);
+ }
+
+.section{
+margin-top: 200px;
+margin-left: -400px;
+}
+
+.section img{
+    width: 500px;
+    height: 300px;
+    margin-left: -200px;
+}
+
+.styled-text {
+    font-size: 24px;
+    font-weight: 600;
+    color: transparent;
+    background: linear-gradient(45deg, #ff512f, #dd2476);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-align: center;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for the text */
+.styled-text:hover {
+    text-shadow: 4px 4px 10px rgba(255, 81, 47, 0.7), 0 0 25px rgba(221, 36, 118, 0.5);
+    transform: scale(1.05);
+}
+
+.styled-heading {
+    font-size: 48px;
+    font-weight: bold;
+    color: transparent;
+    background: linear-gradient(45deg, #ff512f, #dd2476);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-align: center;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for the h1 text */
+.styled-heading:hover {
+    text-shadow: 5px 5px 15px rgba(255, 81, 47, 0.7), 0 0 30px rgba(221, 36, 118, 0.5);
+    transform: scale(1.1);
+}
+
+.section-web-dev-in{
+    margin-top: -350px;
+    margin-left: 400px;
+    width: 1000px;
+}
