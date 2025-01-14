@@ -237,6 +237,13 @@ html {
   scroll-behavior: smooth;
 }
 
+.section-carousel img {
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  margin-left: 150px;
+}
+
 .carousel {
   width: 60%;
   overflow: hidden;
