@@ -244,6 +244,21 @@ html {
   margin-left: 150px;
 }
 
+img {
+  margin-top: -10px;
+}
+
+.app-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-height: 600px;
+  max-width: 600px;
+}
+
 .carousel {
   width: 60%;
   overflow: hidden;
@@ -321,23 +336,12 @@ header p {
   gap: 20px;
 }
 
-.app-card {
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  max-height: 600px;
-  max-width: 500px;
-}
-
 .app-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  background-color: orangered;
+  background-color: orange;
   color: white;
-  transition: 0.75s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 
 .app-card h3 {
@@ -781,4 +785,9 @@ li {
   font-size: 24px;
   text-align: center;
   margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }/*# sourceMappingURL=main.css.map */
