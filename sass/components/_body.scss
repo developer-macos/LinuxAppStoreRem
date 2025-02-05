@@ -33,14 +33,6 @@ body {
   .no-scroll {
     overflow: hidden;
   }
-  
-.menu-item{
-
-}
-  
-.menu-link{
-
-}
 
   .modal {
     position: absolute;
@@ -181,3 +173,25 @@ display: block;
   html {
     scroll-behavior: smooth;
   }
+
+  .section-carousel img{
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    margin-left: 150px;
+  }
+
+  img{
+    margin-top: -10px;
+}
+
+ .app-card {
+     background: #fff;
+     border-radius: 10px;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     padding: 20px;
+     text-align: center;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+     max-height: 600px;
+     max-width: 600px;
+ }
