@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sign-In System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #4a4a4a;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #dataSection {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sign In System</h1>
+
+        <!-- Registration & Login Section -->
+        <div>
+            <input id="username" placeholder="Enter Username" />
+            <input id="password" type="password" placeholder="Enter Password" />
+            <button onclick="register()">Register</button>
+            <button onclick="login()">Login</button>
+        </div>
+
+        <!-- Data Section (Hidden until login) -->
+        <div id="dataSection" style="display: none;">
+            <textarea id="userData" placeholder="Write something..."></textarea>
+            <button onclick="saveData()">Save Data</button>
+        </div>
+    </div>
+
+    <script>
+        function register() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            if (localStorage.getItem(username)) {
+                alert("User already exists. Please log in.");
+                return;
+            }
+
+            const userData = { password: password, data: "" };
+            localStorage.setItem(username, JSON.stringify(userData));
+            alert("User registered successfully!");
+        }
+
+        function login() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const userData = JSON.parse(localStorage.getItem(username));
+
+            if (!userData || userData.password !== password) {
+                alert("Invalid username or password.");
+                return;
+            }
+
+            alert("Login successful!");
+            localStorage.setItem("currentUser", username);
+            document.getElementById('dataSection').style.display = 'block';
+            document.getElementById('userData').value = userData.data || "";
+        }
+
+        function saveData() {
+            const username = localStorage.getItem("currentUser");
+            if (!username) {
+                alert("You are not logged in.");
+                return;
+            }
+
+            const data = document.getElementById('userData').value;
+            const userData = JSON.parse(localStorage.getItem(username));
+            userData.data = data;
+
+            localStorage.setItem(username, JSON.stringify(userData));
+            alert("Data saved successfully!");
+        }
+
+        // Load existing data if user is already logged in
+        const currentUser = localStorage.getItem("currentUser");
+        if (currentUser) {
+            const userData = JSON.parse(localStorage.getItem(currentUser));
+            document.getElementById('dataSection').style.display = 'block';
+            document.getElementById('userData').value = userData.data || "";
+        }
+    </script>
+</body>
+
+</html>
