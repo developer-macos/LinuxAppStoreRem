@@ -1,33 +1,42 @@
-document.getElementById("submitBtn").addEventListener("click", () => {
-    const name = document.getElementById("nameInput").value;
+function register() {
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
 
-    if (name) {
-        // Redirect to the output.html page with the name as a query parameter
-        window.location.href = `index.html?name=${encodeURIComponent(name)}`;
-    } else {
-        alert("Please enter a name.");
-    }
-});
+    fetch('/register', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ username, password })
+    }).then(response => response.text())
+        .then(alert);
+}
 
+function login() {
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
 
-const hamburger = document.querySelector('.hamburger');
-const navLinks = document.querySelector('.nav-links');
+    fetch('/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ username, password })
+    }).then(response => response.json())
+        .then(data => {
+            alert(data.message);
+            if (data.message === 'Login successful') {
+                localStorage.setItem('username', username);
+                localStorage.setItem('userData', data.data);
+                window.location.href = '/';
+            }
+        });
+}
 
-hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-    hamburger.classList.toggle('toggle');
-});
+function saveData() {
+    const username = localStorage.getItem('username');
+    const data = document.getElementById('userData').value;
 
-// Optional animation for the hamburger icon
-hamburger.addEventListener('click', () => {
-    const lines = hamburger.querySelectorAll('span');
-    if (hamburger.classList.contains('toggle')) {
-        lines[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
-        lines[1].style.opacity = '0';
-        lines[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
-    } else {
-        lines[0].style.transform = 'rotate(0)';
-        lines[1].style.opacity = '1';
-        lines[2].style.transform = 'rotate(0)';
-    }
-});
+    fetch('/save', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ username, data })
+    }).then(response => response.text())
+        .then(alert);
+}
